@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TopGer - Motors</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+    <header>
+      <div class="container">
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+          <div class="container">
+            <a class="navbar-brand" href="#">TopGer Motors</a>
+            <button
+              class="navbar-toggler d-lg-none"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapsibleNavId"
+              aria-controls="collapsibleNavId"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+              <ul class="navbar-nav me-auto mt-2 mt-lg-0 mx-3">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#home" aria-current="page"
+                    >Home <span class="visually-hidden">(current)</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#categorias">Categorias</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#recomendados">Recomendados</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contato">Contato</a>
+                </li>
+              </ul>
+
+              <div
+                class="d-flex my-2 my-lg-0"
+                style="border-left: 1px solid white"
+              >
+                <a class="text-light p-2" href="#" style="text-decoration: none"
+                  ><img src="./icons/login.svg" alt="" class="mx-2" />Login</a
+                >
+
+                <a
+                  class="text-light p-2 ms-2"
+                  href="#"
+                  style="text-decoration: none"
+                  ><img src="icons/forum.svg" alt="" class="mx-2" />Fórum</a
+                >
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section id="home" class="mt-5">
+      <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <li
+            data-bs-target="#carouselId"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="First slide"
+          ></li>
+          <li
+            data-bs-target="#carouselId"
+            data-bs-slide-to="1"
+            aria-label="Second slide"
+          ></li>
+          <li
+            data-bs-target="#carouselId"
+            data-bs-slide-to="2"
+            aria-label="Third slide"
+          ></li>
+        </div>
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <img
+              src="./images/slide1.png"
+              class="w-100 d-block"
+              alt="First slide"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./images/slide2.png"
+              class="w-100 d-block"
+              alt="Second slide"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./images/slide3.png"
+              class="w-100 d-block"
+              alt="Third slide"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselId"
+          data-bs-slide="prev"
+        >
+          <span aria-hidden="true"
+            ><img src="./icons/left.svg" alt="left"
+          /></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselId"
+          data-bs-slide="next"
+        >
+          <span aria-hidden="true"
+            ><img src="./icons/right.svg" alt="right"
+          /></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <section id="categorias" class="mt-5">
+      <div class="container">
+        <h2 class="mb-3">Categorias</h2>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="./images/suv.jpg"
+                alt="suv image"
+              />
+              <div class="card-img-overlay">
+                <h4 class="card-title text-light">SUVs</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="./images//sedan1.jpg"
+                alt="sedan image"
+              />
+              <div class="card-img-overlay">
+                <h4 class="card-title text-light">Sedans</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="./images/picape.jpg"
+                alt="picape image"
+              />
+              <div class="card-img-overlay">
+                <h4 class="card-title text-light">Picapes</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="./images/esportivo.jpg"
+                alt="esportivo image"
+              />
+              <div class="card-img-overlay">
+                <h4 class="card-title text-light">Esportivos</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="recomendados" class="mt-5">
+      <div class="container">
+        <h2 class="mb-3">Recomendados para você</h2>
+        <div class="row">
+          <!--card1-->
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+            <div class="card">
+              <div class="card-header p-4 text-center bg-dark text-light">
+                <h5 class="card-title">Lamborghini Aventador</h5>
+              </div>
+
+              <!-- Carousel -->
+              <div
+                id="1"
+                class="carousel slide"
+                data-bs-ride="carousel"
+                data-bs-interval="999999"
+              >
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#1"
+                    data-bs-slide-to="0"
+                    class="active"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#1"
+                    data-bs-slide-to="1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#1"
+                    data-bs-slide-to="2"
+                  ></button>
+                </div>
+
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="./images/lamborghini-aventador.png"
+                      alt="lamborghini-aventador"
+                      class="d-block w-100 card-img-top"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./images/lamborghini-aventador.png"
+                      alt="lamborghini-aventador"
+                      class="d-block w-100 card-img-top"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./images/lamborghini-aventador.png"
+                      alt="lamborghini-aventador"
+                      class="d-block w-100 card-img-top"
+                    />
+                  </div>
+                </div>
+
+                <!-- Left and right controls/icons -->
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#1"
+                  data-bs-slide="prev"
+                >
+                  <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#1"
+                  data-bs-slide="next"
+                >
+                  <span class="carousel-control-next-icon"></span>
+                </button>
+              </div>
+
+              <div class="card-body text-center bg-light">
+                <p class="h6">A partir de <strong>R$ 2.190.000</strong></p>
+                <small class="text-muted"
+                  >Lorem ipsum dolor sit amet consectetur adipisicing.</small
+                >
+                <a href="#" class="btn btn-danger mt-2">Tenho interesse</a>
+              </div>
+            </div>
+          </div>
+
+          <!--card2-->
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+            <div class="card">
+              <div class="card-header p-4 text-center bg-dark text-light">
+                <h5 class="card-title">Lamborghini Urus</h5>
+              </div>
+
+              <!-- Carousel -->
+              <div
+                id="2"
+                class="carousel slide"
+                data-bs-ride="carousel"
+                data-bs-interval="100000"
+              >
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#2"
+                    data-bs-slide-to="0"
+                    class="active"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#2"
+                    data-bs-slide-to="1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#2"
+                    data-bs-slide-to="2"
+                  ></button>
+                </div>
+
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="./images/lamborghini-urus.jpg"
+                      alt="lamborghini-urus"
+                      class="d-block w-100 card-img-top"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./images/lamborghini-urus.jpg"
+                      alt="lamborghini-urus"
+                      class="d-block w-100 card-img-top"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./images/lamborghini-urus.jpg"
+                      alt="lamborghini-urus"
+                      class="d-block w-100 card-img-top"
+                    />
+                  </div>
+                </div>
+
+                <!-- Left and right controls/icons -->
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#2"
+                  data-bs-slide="prev"
+                >
+                  <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#2"
+                  data-bs-slide="next"
+                >
+                  <span class="carousel-control-next-icon"></span>
+                </button>
+              </div>
+
+              <div class="card-body text-center bg-light">
+                <p class="h6">A partir de <strong>R$ 1.030.000</strong></p>
+                <small class="text-muted"
+                  >Lorem ipsum dolor sit amet consectetur adipisicing.</small
+                >
+
+                <a href="#" class="btn btn-danger mt-2">Tenho interesse</a>
+              </div>
+            </div>
+          </div>
+
+          <!--card3-->
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+            <div class="card">
+              <div class="card-header p-4 text-center bg-dark text-light">
+                <h5 class="card-title">Mercedes-Benz GLE</h5>
+              </div>
+
+              <!-- Carousel -->
+              <div
+                id="3"
+                class="carousel slide"
+                data-bs-ride="carousel"
+                data-bs-interval="100000"
+              >
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#3"
+                    data-bs-slide-to="0"
+                    class="active"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#3"
+                    data-bs-slide-to="1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#3"
+                    data-bs-slide-to="2"
+                  ></button>
+                </div>
+
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="./images/mercedes-benz.jpg"
+                      alt="mercedes-benz"
+                      class="d-block w-100 card-img-top"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./images/mercedes-benz.jpg"
+                      alt="mercedes-benz"
+                      class="d-block w-100 card-img-top"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./images/mercedes-benz.jpg"
+                      alt="mercedes-benz"
+                      class="d-block w-100 card-img-top"
+                    />
+                  </div>
+                </div>
+
+                <!-- Left and right controls/icons -->
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#3"
+                  data-bs-slide="prev"
+                >
+                  <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#3"
+                  data-bs-slide="next"
+                >
+                  <span class="carousel-control-next-icon"></span>
+                </button>
+              </div>
+              <div class="card-body text-center bg-light">
+                <p class="h6">A partir de <strong>R$ 420.000</strong></p>
+                <small class="text-muted"
+                  >Lorem ipsum dolor sit amet consectetur adipisicing.</small
+                >
+
+                <a href="#" class="btn btn-danger mt-2">Tenho interesse</a>
+              </div>
+            </div>
+          </div>
+
+          <!--card4-->
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+            <div class="card">
+              <div class="card-header p-4 text-center bg-dark text-light">
+                <h5 class="card-title">Mercedes-Benz Classe C Cabriolet</h5>
+              </div>
+
+              <!-- Carousel -->
+              <div
+                id="4"
+                class="carousel slide"
+                data-bs-ride="carousel"
+                data-bs-interval="100000"
+              >
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#4"
+                    data-bs-slide-to="0"
+                    class="active"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#4"
+                    data-bs-slide-to="1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#4"
+                    data-bs-slide-to="2"
+                  ></button>
+                </div>
+
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="./images/mercedez2.png"
+                      alt="mercedez2"
+                      class="d-block w-100 card-img-top"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./images/mercedez2.png"
+                      alt="mercedez2"
+                      class="d-block w-100 card-img-top"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./images/mercedez2.png"
+                      alt="mercedez2"
+                      class="d-block w-100 card-img-top"
+                    />
+                  </div>
+                </div>
+
+                <!-- Left and right controls/icons -->
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#4"
+                  data-bs-slide="prev"
+                >
+                  <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#4"
+                  data-bs-slide="next"
+                >
+                  <span class="carousel-control-next-icon"></span>
+                </button>
+              </div>
+              <div class="card-body text-center bg-light">
+                <p class="h6">A partir de <strong>R$ 405.000</strong></p>
+                <small class="text-muted"
+                  >Lorem ipsum dolor sit amet consectetur adipisicing.</small
+                >
+
+                <a href="#" class="btn btn-danger mt-2">Tenho interesse</a>
+              </div>
+            </div>
+          </div>
+
+          <!--card5-->
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+            <div class="card">
+              <div class="card-header p-4 text-center bg-dark text-light">
+                <h5 class="card-title">BMW Série 3</h5>
+              </div>
+              <div
+                id="5"
+                class="carousel slide"
+                data-bs-ride="carousel"
+                data-bs-interval="100000"
+              >
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#5"
+                    data-bs-slide-to="0"
+                    class="active"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#5"
+                    data-bs-slide-to="1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#5"
+                    data-bs-slide-to="2"
+                  ></button>
+                </div>
+
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="./images/bmw.jpg"
+                      alt="bmw"
+                      class="d-block w-100 card-img-top"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./images/bmw.jpg"
+                      alt="bmw"
+                      class="d-block w-100 card-img-top"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./images/bmw.jpg"
+                      alt="bmw"
+                      class="d-block w-100 card-img-top"
+                    />
+                  </div>
+                </div>
+
+                <!-- Left and right controls/icons -->
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#5"
+                  data-bs-slide="prev"
+                >
+                  <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#5"
+                  data-bs-slide="next"
+                >
+                  <span class="carousel-control-next-icon"></span>
+                </button>
+              </div>
+              <div class="card-body text-center bg-light">
+                <p class="h6">A partir de <strong>R$ 265.000</strong></p>
+                <small class="text-muted"
+                  >Lorem ipsum dolor sit amet consectetur adipisicing.</small
+                >
+
+                <a href="#" class="btn btn-danger mt-2">Tenho interesse</a>
+              </div>
+            </div>
+          </div>
+
+          <!--card6-->
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+            <div class="card">
+              <div class="card-header p-4 text-center bg-dark text-light">
+                <h5 class="card-title">Ferrari 599 GTB Fiorano</h5>
+              </div>
+
+              <!-- Carousel -->
+              <div
+                id="6"
+                class="carousel slide"
+                data-bs-ride="carousel"
+                data-bs-interval="100000"
+              >
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#6"
+                    data-bs-slide-to="0"
+                    class="active"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#6"
+                    data-bs-slide-to="1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#6"
+                    data-bs-slide-to="2"
+                  ></button>
+                </div>
+
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="./images/ferrari.jpg"
+                      alt="ferrari"
+                      class="d-block w-100 card-img-top"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./images/ferrari.jpg"
+                      alt="ferrari"
+                      class="d-block w-100 card-img-top"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./images/ferrari.jpg"
+                      alt="ferrari"
+                      class="d-block w-100 card-img-top"
+                    />
+                  </div>
+                </div>
+
+                <!-- Left and right controls/icons -->
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#6"
+                  data-bs-slide="prev"
+                >
+                  <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#6"
+                  data-bs-slide="next"
+                >
+                  <span class="carousel-control-next-icon"></span>
+                </button>
+              </div>
+              <div class="card-body text-center bg-light">
+                <p class="h6">A partir de <strong>R$ 1.210.000</strong></p>
+                <small class="text-muted"
+                  >Lorem ipsum dolor sit amet consectetur adipisicing.</small
+                >
+
+                <a href="#" class="btn btn-danger mt-2">Tenho interesse</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="mt-5">
+      <div class="container">
+        <div class="row">
+          <form class="col-lg-4 col-md-6 col-sm-12 mb-3">
+            <h2 class="mb-3">Entre em contato</h2>
+            <label for="name" class="form-label">Name</label>
+            <input
+              type="text"
+              name=""
+              id="name"
+              class="form-control mb-3"
+              placeholder="Digite seu nome"
+            />
+
+            <label for="email" class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-control mb-3"
+              name=""
+              id="email"
+              placeholder="abc@mail.com"
+            />
+            <label for="tel" class="form-label">Telefone</label>
+            <input
+              type="tel"
+              class="form-control mb-3"
+              name=""
+              id="email"
+              placeholder="(00)00000-0000"
+            />
+            <label for="txt" class="form-label">Mensagem</label>
+            <textarea
+              class="form-control"
+              name=""
+              id="txt"
+              rows="3"
+              placeholder="Digite sua mensagem"
+            ></textarea>
+            <button type="submit" class="btn btn-danger mt-3">Submit</button>
+          </form>
+
+          <div class="col-lg-8 col-md-6 col-sm-12 mb-3">
+            <h2 class="mb-3">Dúvidas frequentes</h2>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button
+                    class="accordion-button collapsed h5 shadow-none"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne"
+                    aria-expanded="true"
+                    aria-controls="flush-collapseOne"
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aperiam accusamus vero assumenda ex, qui officia eos quod.
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseOne"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingOne"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Tempore, rem adipisci repudiandae nisi impedit vitae est
+                      dolore perspiciatis similique assumenda quae doloremque,
+                      illum, sequi molestiae recusandae tenetur dignissimos quam
+                      in.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button
+                    class="accordion-button collapsed h5 shadow-none"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo"
+                    aria-expanded="true"
+                    aria-controls="flush-collapseTwo"
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aperiam accusamus vero assumenda ex, qui officia eos quod.
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingTwo"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Magnam assumenda beatae sequi illum consequuntur aut
+                      distinctio unde, amet natus repudiandae exercitationem
+                      asperiores voluptatibus quis magni alias illo voluptatem
+                      earum aspernatur!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTree">
+                  <button
+                    class="accordion-button collapsed h5 shadow-none"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTree"
+                    aria-expanded="true"
+                    aria-controls="flush-collapseTree"
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aperiam accusamus vero assumenda ex, qui officia eos quod.
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseTree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingTree"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Eveniet quo enim eum. Eius, quasi, ab non temporibus vitae
+                      totam nulla tempora minus laboriosam excepturi dolore
+                      ipsa. Optio temporibus voluptatem porro!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFour">
+                  <button
+                    class="accordion-button collapsed h5 shadow-none"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFour"
+                    aria-expanded="true"
+                    aria-controls="flush-collapseFour"
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aperiam accusamus vero assumenda ex, qui officia eos quod.
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingFour"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      In consectetur, facere rem animi inventore praesentium?
+                      Commodi, repudiandae natus qui obcaecati facere, deserunt
+                      corporis facilis nam animi voluptas nesciunt consequuntur
+                      dolore.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFive">
+                  <button
+                    class="accordion-button collapsed h5 shadow-none"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFive"
+                    aria-expanded="true"
+                    aria-controls="flush-collapseFive"
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aperiam accusamus vero assumenda ex, qui officia eos quod.
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseFive"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingFive"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      In consectetur, facere rem animi inventore praesentium?
+                      Commodi, repudiandae natus qui obcaecati facere, deserunt
+                      corporis facilis nam animi voluptas nesciunt consequuntur
+                      dolore.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer
+      class="p-3 bg-dark text-light d-flex align-items-center justify-content-center"
+    >
+      &copy;2023 - TopGerMotors S.A. Todos os direitos reservados.
+    </footer>
+
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
